@@ -12,6 +12,7 @@ const morganOption = (NODE_ENV === 'production')
     : 'dev';
 
 app.use(morgan(morganOption))
+app.use(express.json())
 app.use(helmet())
 app.use(cors())
 

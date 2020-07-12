@@ -29,6 +29,7 @@ Run the tests `npm test`
 
 1. Reduce console logging to minimum
 2. Confirm node version with `node --version`, and update engines in package.json
+3. Run `npm audit`
 
 ## Deploying
 

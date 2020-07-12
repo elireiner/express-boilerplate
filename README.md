@@ -25,7 +25,7 @@ Start nodemon for the application `npm run dev`
 
 Run the tests `npm test`
 
-### prepare for deployment
+## Prepare for deployment
 
 1. Reduce console logging to minimum
 2. Confirm node version with `node --version`, and update engines in package.json

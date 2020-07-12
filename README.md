@@ -16,7 +16,7 @@ Complete the following steps to start a new project (NEW-PROJECT-NAME):
         console.error(error)
         response = { message: error.message, error }
     },  but remember to remove before deploying.
-    
+
 ## Scripts
 
 Start the application `npm start`
@@ -24,6 +24,11 @@ Start the application `npm start`
 Start nodemon for the application `npm run dev`
 
 Run the tests `npm test`
+
+### prepare for deployment
+
+1. Reduce console logging to minimum
+2. Confirm node version with `node --version`, and update engines in package.json
 
 ## Deploying
 

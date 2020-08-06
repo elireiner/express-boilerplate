@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express')
 const morgan = require('morgan')
+//const debug = require('debug')('express:view')
 const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
@@ -8,6 +9,8 @@ const { NODE_ENV } = require('./config')
 const winston = require('winston');
 
 const app = express()
+
+//debug('booting %o', name);
 
 const morganOption = (NODE_ENV === 'production')
     ? 'tiny'
@@ -49,6 +52,7 @@ app.use(function validateBearerToken(req, res, next) {
 */
 
 app.get('/', (req, res) => {
+     //debug(req);
     res.send('Hello, world!')
 })
 

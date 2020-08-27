@@ -17,6 +17,7 @@ Complete the following steps to start a new project (NEW-PROJECT-NAME):
         console.error(error)
         response = { message: error.message, error }
     },  but remember to remove before deploying.
+9. Update the connect scripts to the correct database and user
 
 ## Scripts
 
